@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
-import './App.css';
+import React from 'react';
+import './App.scss';
+import Header from './Components/Header';
 
 const App: React.FC = () => {
-  const [projects, setProjects] = useState<string[]>([]);
-
-  const projectAddHandler = (text: string) => {
-    setProjects(prevProjects => [...prevProjects, text]);
-  };
-
-  
 
   return (
     <div className="App">
-      
+      <Header></Header>
     </div>
   );
 }
